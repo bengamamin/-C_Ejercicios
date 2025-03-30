@@ -1,0 +1,125 @@
+
+#include <stdio.h>
+#include <math.h>
+
+void ejercicio1(){
+    int num1, num2;
+    printf("Ingresa dos numeros: ");
+    scanf("%d %d", &num1, &num2);
+    printf("La suma de %d y %d es: %d\n", num1, num2, num1 + num2);
+}
+
+void ejercicio2(){
+    int num1, num2;
+    printf("Ingresa dos numeros: ");
+    scanf("%d %d", &num1, &num2);
+    printf("La resta de %d y %d es: %d\n", num1, num2, num1 - num2);
+}
+
+void ejercicio3(){
+    float num1, num2;
+    printf("Numero 2 decimales: ");
+    scanf("%f %f", &num1, &num2);
+    printf("La multiplicación de %.2f y %.2f es: %.2f\n", num1, num2, num1 * num2);
+}
+
+void ejercicio4(){
+    int num1, num2;
+    printf("Ingrese dos números: ");
+    scanf("%d %d", &num1, &num2);
+    printf("División entera: %d\n", num1 / num2);
+}
+
+void ejercicio5(){
+    int num1, num2;
+    printf("Ingresa dos números: ");
+    scanf("%d %d", &num1, &num2);
+    printf("Módulo: %d\n", num1 % num2);
+}
+
+void ejercicio6(){
+    float base, altura, area;
+    printf("Base y altura: ");
+    scanf("%f %f", &base, &altura);
+    area = (base * altura) / 2;
+    printf("Área: %.2f\n", area);
+}
+
+void ejercicio7(){
+    int n1, n2, n3;
+    printf("3 números: ");
+    scanf("%d %d %d", &n1, &n2, &n3);
+    printf("Promedio: %.2f\n", (float)(n1 + n2 + n3) / 3);
+}
+
+void ejercicio8(){
+    int n;
+    printf("Número: ");
+    scanf("%d", &n);
+    printf("Doble: %d\n", n * 2);
+    printf("Triple: %d\n", n * 3);
+    printf("Cuadrado: %d\n", n * n);
+}
+
+void ejercicio9(){
+    int n1, n2;
+    printf("Dos números: ");
+    scanf("%d %d", &n1, &n2);
+    printf("División decimal: %.2f\n", (float)n1 / n2);
+}
+
+void ejercicio10(){
+    int a, b, c, d;
+    printf("Ingresa a, b, c, d: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    printf("Resultado: %d\n", (a + b) * (c - d));
+}
+
+void ejercicio11(){
+    int sec;
+    printf("Segundos: ");
+    scanf("%d", &sec);
+    int h = sec / 3600;
+    int m = (sec % 3600) / 60;
+    int s = sec % 60;
+    printf("%d segundos = %d h, %d m, %d s\n", sec, h, m, s);
+}
+
+void ejercicio12(){
+    int n;
+    printf("Número: ");
+    scanf("%d", &n);
+    printf("Es %s\n", (n % 2 == 0) ? "par" : "impar");
+}
+
+void ejercicio13(){
+    int a, b;
+    printf("Dos números: ");
+    scanf("%d %d", &a, &b);
+    int mayor = (a > b) ? a : b;
+    int dif = (a > b) ? (a - b) : (b - a);
+    float prom = (a + b) / 2.0;
+    printf("Mayor: %d, Diferencia: %d, Promedio: %.2f\n", mayor, dif, prom);
+}
+
+void ejercicio14(){
+    int n;
+    printf("Número: ");
+    scanf("%d", &n);
+    int abs = (n < 0) ? -n : n;
+    printf("Valor absoluto: %d\n", abs);
+}
+
+void ejercicio15(){
+    float r, h;
+    const float PI = 3.14;
+    printf("Radio y altura: ");
+    scanf("%f %f", &r, &h);
+    float v = PI * pow(r, 2) * h;
+    printf("Volumen: %.2f\n", v);
+}
+
+int main() {
+    ejercicio1();  // podés ir cambiando para probar todos
+    return 0;
+}
