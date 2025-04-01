@@ -1,0 +1,51 @@
+1.6 Representación en Memoria (`&` y punteros)
+
+## ¿Qué es la dirección de memoria?
+En C, cada variable vive en una dirección específica de la memoria RAM. Esa dirección se obtiene con el operador `&`.
+
+```c
+int a = 5;
+printf("Dirección de a: %p\n", &a);
+```
+
+## ¿Qué es un puntero?
+Un puntero es una variable que almacena la dirección de otra variable.
+
+```c
+int a = 10;
+int *p = &a;
+```
+
+## Operadores clave
+
+| Símbolo | Significado                      |
+|---------|----------------------------------|
+| `&x`    | Dirección de la variable x       |
+| `*p`    | Valor en la dirección que apunta `p` |
+
+## ¿Para qué sirve?
+- Compartir datos entre funciones
+- Manipular arreglos
+- Estructuras dinámicas
+- Control directo de memoria
+
+## Ejemplo
+```c
+int a = 3;
+int *p = &a;
+
+printf("%d", *p);  // 3
+printf("%p", p);   // Dirección
+```
+
+## Tamaño de punteros
+```c
+int *ptr;
+sizeof(ptr);   // Tamaño del puntero (8 bytes en 64 bits)
+sizeof(*ptr);  // Tamaño del valor apuntado (ej: 4 bytes si es int)
+```
+
+## Conclusión
+- Toda variable tiene dirección (`&`)
+- Los punteros guardan direcciones
+- El `*` accede al valor en la memoria
