@@ -1,0 +1,16 @@
+# TEMA 2 – CONTROL DE FLUJO
+
+Un programa no es útil si solo ejecuta instrucciones de forma lineal. En este tema aprenderás cómo una computadora puede **tomar decisiones**, actuar **según condiciones** y resolver diferentes caminos lógicos.
+
+Esto se logra usando **estructuras de control**, como:
+
+- `if`, `else` → para ejecutar código según condiciones
+- `else if` → para múltiples caminos posibles
+- `switch` → para seleccionar entre varios casos
+- `operadores lógicos` → para condiciones más complejas
+
+Con este tema vas a comenzar a construir **programas inteligentes**, que pueden responder a lo que el usuario hace, que pueden validar datos, reaccionar, elegir.
+
+Este es el inicio real de la **lógica computacional**.
+
+---
