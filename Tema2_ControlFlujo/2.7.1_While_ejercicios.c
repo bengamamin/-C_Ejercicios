@@ -87,3 +87,63 @@ while (idx < 5) {
     idx++;
 }
 printf("Total pares: %d\n", pares);
+
+// ========== CONTADOR Y ACUMULADOR COMBINADOS ==========
+int i = 0, num, suma = 0;
+while (i < 5) {
+    printf("Número #%d: ", i+1);
+    scanf("%d", &num);
+    suma += num;
+    i++;
+}
+printf("Suma total: %d\n", suma);
+printf("Promedio: %.2f\n", (float)suma / 5);
+
+// ========== MAYOR Y MENOR ==========
+int mayor, menor, x = 0, entrada;
+printf("Ingresa número: ");
+scanf("%d", &entrada);
+mayor = menor = entrada;
+
+while (x < 4) {
+    scanf("%d", &entrada);
+    if (entrada > mayor) mayor = entrada;
+    if (entrada < menor) menor = entrada;
+    x++;
+}
+printf("Mayor: %d\n", mayor);
+printf("Menor: %d\n", menor);
+
+// ========== VALIDACIÓN DE ENTRADA ==========
+int edad;
+printf("Ingresa edad (1-120): ");
+scanf("%d", &edad);
+while (edad < 1 || edad > 120) {
+    printf("Edad inválida. Intente otra vez: ");
+    scanf("%d", &edad);
+}
+printf("Edad válida: %d\n", edad);
+
+// ========== BANDERA AVANZADA ==========
+int encontrado = 0, val, intentos = 0;
+while (intentos < 6 && !encontrado) {
+    printf("Número secreto (entre 1 y 10): ");
+    scanf("%d", &val);
+    if (val == 7) {
+        printf("¡Correcto!\n");
+        encontrado = 1;
+    }
+    intentos++;
+}
+if (!encontrado) printf("Número no encontrado.\n");
+
+// ========== CENTINELA Y CONTEO ==========
+int suma = 0, contador = 0, entrada;
+printf("Ingrese números (0 para salir):\n");
+scanf("%d", &entrada);
+while (entrada != 0) {
+    suma += entrada;
+    contador++;
+    scanf("%d", &entrada);
+}
+printf("Ingresaste %d números. Suma: %d\n", contador, suma);
