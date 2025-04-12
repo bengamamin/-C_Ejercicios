@@ -1,0 +1,16 @@
+4.6 – Strings con Punteros – Enunciados para práctica
+
+1. Recorrer un string usando índice y mostrar cada carácter.
+2. Recorrer un string usando puntero y mostrar cada carácter.
+3. Calcular la longitud de un string manualmente sin usar strlen().
+4. Copiar un string en otro usando punteros.
+5. Comparar dos strings manualmente sin usar strcmp().
+6. Leer una cadena con fgets y mostrarla.
+7. Eliminar el salto de línea ('\n') de una cadena leída con fgets.
+8. Modificar un carácter específico de un string.
+9. Contar cuántas vocales hay en una cadena usando puntero.
+10. Contar cuántas palabras hay en un string separado por espacios.
+11. Invertir un string usando punteros o índice.
+12. Validar una contraseña ingresada (mínimo 8 caracteres y al menos un número).
+13. Crear un array de strings (char *[]) y recorrerlo.
+14. Simular la función strtok para separar palabras de un string por espacios.
